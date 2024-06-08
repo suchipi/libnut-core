@@ -4,7 +4,7 @@ let hasScreenRecordingPermission = false;
 let hasAccessibilityPermission = false;
 
 try {
-    const permissions = require("@nut-tree/node-mac-permissions");
+    const permissions = require("@suchipi/node-mac-permissions");
 
     const wrapWithWarning = (message, nativeFunction) => (...args) => {
         console.warn(message);
